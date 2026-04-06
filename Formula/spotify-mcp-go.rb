@@ -4,20 +4,20 @@
 class SpotifyMcpGo < Formula
   desc "MCP server that exposes the Spotify Web API as MCP tools"
   homepage "https://github.com/makesometh-ing/spotify-mcp-go"
-  version "2026.04.0-rc.1"
+  version "2026.04.0-rc.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/makesometh-ing/spotify-mcp-go/releases/download/v2026.04.0-rc.1/spotify-mcp-go-darwin-arm64"
-      sha256 "bf10a9c76a002656be16a74a982abbc8167b521e1fd21804501bc84965d901b9"
+      url "https://github.com/makesometh-ing/spotify-mcp-go/releases/download/v2026.04.0-rc.2/spotify-mcp-go-darwin-arm64"
+      sha256 "5ab46115e1e65947f1c12e794cfe54d0b6361d0882bf6eb4195ee95433b63ddb"
 
       def install
         bin.install "spotify-mcp-go-darwin-arm64" => "spotify-mcp-go"
       end
     elsif Hardware::CPU.intel?
-      url "https://github.com/makesometh-ing/spotify-mcp-go/releases/download/v2026.04.0-rc.1/spotify-mcp-go-darwin-amd64"
-      sha256 "d03842d260abf3f0cfbc5dfd4539008ce194aba78b7f2f467fd702d78c9223e6"
+      url "https://github.com/makesometh-ing/spotify-mcp-go/releases/download/v2026.04.0-rc.2/spotify-mcp-go-darwin-amd64"
+      sha256 "a8d109578d20e1dc613bd82eb543ce7bbcb64555e5814048e4ce6f0a61c02a44"
 
       def install
         bin.install "spotify-mcp-go-darwin-amd64" => "spotify-mcp-go"
