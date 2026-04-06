@@ -26,6 +26,6 @@ class SpotifyMcpGo < Formula
   end
 
   test do
-    assert_match "spotify-mcp-go", shell_output("#{bin}/spotify-mcp-go --help 2>&1", 2)
+    assert_match "spotify-mcp-go", shell_output("#{bin}/spotify-mcp-go --help 2>&1")
   end
 end
